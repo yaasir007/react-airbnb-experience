@@ -1,0 +1,15 @@
+.nav {
+  height: 8vh;
+  border-bottom: 2px solid black;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.nav__logo {
+
+}
