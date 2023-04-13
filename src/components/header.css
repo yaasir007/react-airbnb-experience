@@ -1,15 +1,6 @@
-.nav {
-  height: 8vh;
-  border-bottom: 2px solid black;
-}
-
-.nav-wrapper {
+nav {
+  height: 70px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 1.5rem 1rem;
-}
-
-.nav__logo {
-
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
