@@ -9,6 +9,11 @@
   gap: .2rem;
 }
 
+.card-img {
+  width: 176px;
+  height: 235px;
+}
+
 .stat--bold {
   font-weight: bold;
 }

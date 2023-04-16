@@ -1,12 +1,11 @@
 import React from "react"
 import "./css/card.css"
-import Katie from "../assets/cards/katieZaferes.png";
 import Star from '../assets/cards/star.png'
 
-const Card = () => {
+const Card = (props) => {
     return (
         <div className="card-wrapper">
-          <img src={Katie} alt="" className="card-img" />
+          <img src={props.image} alt="" className="card-img" />
           <div className="card--content">
             <div className="card--rating">
               <img src={Star} alt="" className='card-star'/>
@@ -14,8 +13,8 @@ const Card = () => {
               <span>(6) • </span>
               <span>USA</span>
             </div>
-            <p>Life lessons with Katie Zaferes</p>
-            <p><span className="stat--bold">From $136 </span>/ person</p>
+            <p>{props.name}</p>
+            <p><span className="stat--bold">From ${props.price} </span>/ person</p>
           </div>
         </div>
     )
