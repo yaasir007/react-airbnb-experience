@@ -6,22 +6,16 @@ import Star from '../assets/cards/star.png'
 const Card = () => {
     return (
         <div className="card-wrapper">
-          <div className="card--img">
-            <img src={Katie} alt="" />
-            <div className="sticker">SOLD OUT</div>
-          </div>
-
+          <img src={Katie} alt="" className="card-img" />
           <div className="card--content">
             <div className="card--rating">
-              <div className="card--img"></div>
-              <img src={Star} alt="" />
-              <div>5.0 (6) USA</div>
+              <img src={Star} alt="" className='card-star'/>
+              <span>5.0</span>
+              <span>(6) • </span>
+              <span>USA</span>
             </div>
-              <div>Life lessons with Katie Zaferes</div>
-              <div>
-                <span>From $136</span>
-                / person
-              </div>
+            <p>Life lessons with Katie Zaferes</p>
+            <p><span className="stat--bold">From $136 </span>/ person</p>
           </div>
         </div>
     )

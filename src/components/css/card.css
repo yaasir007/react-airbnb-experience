@@ -1,6 +1,24 @@
 .card-wrapper {
+  width: 15%;
+}
+
+.card--rating {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  gap: .2rem;
+}
+
+.stat--bold {
+  font-weight: bold;
+}
+
+.card-star {
+  width: 20px;
+}
+
+.card--content {
+  display: flex;
   flex-direction: column;
+  gap: .3rem;
 }
