@@ -1,26 +1,30 @@
 import React from "react"
+import "./css/card.css"
+import Katie from "../assets/cards/katieZaferes.png";
+import Star from '../assets/cards/star.png'
 
-/*
-Challenge: Build the Card component
-For now, hard-code in the data (like
-the rating, title, price, etc.)
-
-Notes:
-- Only render 1 instance (I already did this for you)
-- The star icon and photo (katie-zaferes.png) are in the images
-  folder for your use
-- Make sure to include:
-    - image
-    - star icon (star.png), rating, and review count
-    - title
-    - cost/person
-- The main purpose of this challenge is to show you where our limitations
-  currently are, so don't worry about the fact that you're hard-coding all
-  this data into the component.
-*/
-
-export default function Card() {
+const Card = () => {
     return (
-        <h1>Replace this</h1>
+        <div className="card-wrapper">
+          <div className="card--img">
+            <img src={Katie} alt="" />
+            <div className="sticker">SOLD OUT</div>
+          </div>
+
+          <div className="card--content">
+            <div className="card--rating">
+              <div className="card--img"></div>
+              <img src={Star} alt="" />
+              <div>5.0 (6) USA</div>
+            </div>
+              <div>Life lessons with Katie Zaferes</div>
+              <div>
+                <span>From $136</span>
+                / person
+              </div>
+          </div>
+        </div>
     )
 }
+
+export default Card
